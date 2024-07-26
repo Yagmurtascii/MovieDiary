@@ -90,7 +90,7 @@
             <objects>
                 <viewController id="aEK-14-Lgc" customClass="SecondViewController" customModule="MovieDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwx-X6-xga">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZM0-83-tHP">
@@ -123,7 +123,7 @@
             <objects>
                 <viewController id="WpV-NP-j60" customClass="FourthViewController" customModule="MovieDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dIJ-jS-IUE">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Image :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycC-AX-xR1">
@@ -133,7 +133,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Film :" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eV6-27-0Xf">
-                                <rect key="frame" x="26.000000000000007" y="282" width="103.66666666666669" height="20"/>
+                                <rect key="frame" x="26.000000000000007" y="259" width="103.66666666666669" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="103.66666666666667" id="EDU-iC-waR"/>
                                 </constraints>
@@ -167,7 +167,7 @@
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xaP-ec-5Q2">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xaP-ec-5Q2">
                                 <rect key="frame" x="137" y="296" width="208" height="34"/>
                                 <color key="backgroundColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -187,7 +187,7 @@
                                 <rect key="frame" x="139" y="209" width="207" height="34"/>
                                 <color key="backgroundColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnl-lI-8Yl">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnl-lI-8Yl">
                                 <rect key="frame" x="138" y="338" width="208" height="34"/>
                                 <color key="backgroundColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -212,18 +212,29 @@
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pick Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRI-IO-Neg">
+                                <rect key="frame" x="136" y="216" width="208" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="VSW-Uu-chP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                <color key="textColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n0o-gC-zAY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="d34-g2-AJg" firstAttribute="centerX" secondItem="xaP-ec-5Q2" secondAttribute="centerX" id="0Nh-rO-t6N"/>
                             <constraint firstItem="vJ9-hR-pwt" firstAttribute="leading" secondItem="EHE-g4-ZDg" secondAttribute="leading" id="11O-kg-A1j"/>
+                            <constraint firstItem="KRI-IO-Neg" firstAttribute="top" secondItem="ycC-AX-xR1" secondAttribute="top" id="1jy-YV-jHa"/>
                             <constraint firstItem="vJ9-hR-pwt" firstAttribute="top" secondItem="lQF-zC-TOW" secondAttribute="bottom" constant="29" id="2NZ-9U-3zO"/>
                             <constraint firstItem="Hhd-vq-uWn" firstAttribute="top" secondItem="EHE-g4-ZDg" secondAttribute="bottom" constant="19" id="4UV-ij-fFq"/>
                             <constraint firstItem="EHE-g4-ZDg" firstAttribute="centerY" secondItem="mXc-h3-ot3" secondAttribute="centerY" id="6f5-kP-frF"/>
                             <constraint firstItem="eV6-27-0Xf" firstAttribute="top" secondItem="ycC-AX-xR1" secondAttribute="bottom" constant="15" id="7Fe-CA-NFt"/>
                             <constraint firstItem="xaP-ec-5Q2" firstAttribute="top" secondItem="d34-g2-AJg" secondAttribute="bottom" constant="11" id="8Gt-RE-1QA"/>
                             <constraint firstItem="eV6-27-0Xf" firstAttribute="leading" secondItem="n0o-gC-zAY" secondAttribute="leading" constant="26.000000000000007" id="8Qc-8h-ACh"/>
+                            <constraint firstItem="KRI-IO-Neg" firstAttribute="trailing" secondItem="d34-g2-AJg" secondAttribute="trailing" id="8dM-tM-Rqd"/>
                             <constraint firstItem="0Ux-4e-ViL" firstAttribute="centerX" secondItem="mXc-h3-ot3" secondAttribute="centerX" id="9XL-fm-KVM"/>
                             <constraint firstItem="d34-g2-AJg" firstAttribute="leading" secondItem="nnl-lI-8Yl" secondAttribute="leading" id="Cp5-Mm-gbL"/>
                             <constraint firstItem="EHE-g4-ZDg" firstAttribute="leading" secondItem="Hhd-vq-uWn" secondAttribute="leading" id="G3J-AE-Kww"/>
@@ -232,6 +243,7 @@
                             <constraint firstItem="lQF-zC-TOW" firstAttribute="leading" secondItem="dIJ-jS-IUE" secondAttribute="leadingMargin" constant="-26" id="OKr-0r-asS"/>
                             <constraint firstItem="mXc-h3-ot3" firstAttribute="top" secondItem="nnl-lI-8Yl" secondAttribute="bottom" constant="8" id="PPo-a4-mmK"/>
                             <constraint firstItem="ycC-AX-xR1" firstAttribute="bottom" secondItem="0Ux-4e-ViL" secondAttribute="bottom" id="QVd-Ce-eBb"/>
+                            <constraint firstItem="KRI-IO-Neg" firstAttribute="centerY" secondItem="0Ux-4e-ViL" secondAttribute="centerY" id="Rg5-MH-cs1"/>
                             <constraint firstItem="lQF-zC-TOW" firstAttribute="top" secondItem="xaP-ec-5Q2" secondAttribute="top" id="TCV-TR-tlH"/>
                             <constraint firstItem="xaP-ec-5Q2" firstAttribute="centerX" secondItem="sX7-Ed-znS" secondAttribute="centerX" id="TKf-Lb-YXw"/>
                             <constraint firstItem="eV6-27-0Xf" firstAttribute="centerY" secondItem="d34-g2-AJg" secondAttribute="centerY" id="TkA-tk-A2y"/>
@@ -255,6 +267,7 @@
                             <constraint firstItem="EHE-g4-ZDg" firstAttribute="centerX" secondItem="Hhd-vq-uWn" secondAttribute="centerX" id="rJQ-dA-vJZ"/>
                             <constraint firstItem="0Ux-4e-ViL" firstAttribute="top" secondItem="n0o-gC-zAY" secondAttribute="top" constant="106" id="uR2-fn-CmB"/>
                             <constraint firstItem="lQF-zC-TOW" firstAttribute="centerX" secondItem="vJ9-hR-pwt" secondAttribute="centerX" id="wOr-LW-VDO"/>
+                            <constraint firstItem="KRI-IO-Neg" firstAttribute="leading" secondItem="ycC-AX-xR1" secondAttribute="trailing" constant="5" id="xep-4m-N2j"/>
                             <constraint firstItem="ycC-AX-xR1" firstAttribute="trailing" secondItem="EHE-g4-ZDg" secondAttribute="trailing" id="z5B-9L-wIl"/>
                         </constraints>
                     </view>
@@ -264,7 +277,7 @@
                         <outlet property="country" destination="nnl-lI-8Yl" id="qro-Dn-zIc"/>
                         <outlet property="director" destination="xaP-ec-5Q2" id="ofZ-tz-RhA"/>
                         <outlet property="filmName" destination="d34-g2-AJg" id="eoH-tg-wYU"/>
-                        <outlet property="image" destination="0Ux-4e-ViL" id="DJN-xp-Ov8"/>
+                        <outlet property="image" destination="0Ux-4e-ViL" id="LA8-i9-w1A"/>
                         <outlet property="textView" destination="sX7-Ed-znS" id="btY-yd-WDZ"/>
                         <outlet property="year" destination="mXc-h3-ot3" id="5gw-yT-vlP"/>
                         <segue destination="aEK-14-Lgc" kind="show" identifier="toListVC" id="xhD-SF-9nE"/>
@@ -279,7 +292,7 @@
             <objects>
                 <viewController id="0a6-3O-zW4" customClass="ThirdViewController" customModule="MovieDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V1A-0b-GYc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="1540"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1550"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAc-3i-gl6">
@@ -454,7 +467,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bTb-Nf-tau"/>
+        <segue reference="dYE-mP-IhP"/>
         <segue reference="xhD-SF-9nE"/>
     </inferredMetricsTieBreakers>
     <resources>
