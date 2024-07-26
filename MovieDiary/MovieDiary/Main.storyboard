@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qFs-4Q-HV7">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MovieDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adsız tasarım-2" translatesAutoresizingMaskIntoConstraints="NO" id="Ujm-07-bye">
+                                <rect key="frame" x="48" y="220" width="297" height="255"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVIE DIARY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHl-jP-MdG">
+                                <rect key="frame" x="16" y="517" width="361" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="atq-Hd-eeY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsC-Za-M72">
+                                <rect key="frame" x="118" y="593" width="156" height="54"/>
+                                <color key="backgroundColor" red="0.32016205790000002" green="0.45407176020000001" blue="0.33164888619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="7sC-DZ-2sU"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SHOW">
+                                    <fontDescription key="titleFontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="29"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="aEK-14-Lgc" kind="show" id="G1X-Ip-LNq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E67-89-wO8">
+                                <rect key="frame" x="118" y="655" width="156" height="54"/>
+                                <color key="backgroundColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CREATE">
+                                    <fontDescription key="titleFontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="29"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="WpV-NP-j60" kind="show" id="dYE-mP-IhP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jsC-Za-M72" firstAttribute="leading" secondItem="E67-89-wO8" secondAttribute="leading" id="2DI-Xk-1Yn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jsC-Za-M72" secondAttribute="bottom" constant="171" id="78k-Wg-SU3"/>
+                            <constraint firstItem="aHl-jP-MdG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8Fj-5x-kxV"/>
+                            <constraint firstItem="aHl-jP-MdG" firstAttribute="top" secondItem="Ujm-07-bye" secondAttribute="bottom" constant="42" id="92Q-el-a8K"/>
+                            <constraint firstItem="jsC-Za-M72" firstAttribute="trailing" secondItem="E67-89-wO8" secondAttribute="trailing" id="FkA-Aw-7dp"/>
+                            <constraint firstItem="jsC-Za-M72" firstAttribute="top" secondItem="aHl-jP-MdG" secondAttribute="bottom" constant="25" id="NRc-0r-dFQ"/>
+                            <constraint firstItem="Ujm-07-bye" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="P8h-we-73a"/>
+                            <constraint firstItem="Ujm-07-bye" firstAttribute="centerX" secondItem="aHl-jP-MdG" secondAttribute="centerX" id="QBl-j2-xqI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E67-89-wO8" secondAttribute="bottom" constant="109" id="XXn-GI-mJP"/>
+                            <constraint firstItem="aHl-jP-MdG" firstAttribute="centerX" secondItem="jsC-Za-M72" secondAttribute="centerX" id="eNG-vp-YIm"/>
+                            <constraint firstItem="E67-89-wO8" firstAttribute="top" secondItem="jsC-Za-M72" secondAttribute="bottom" constant="8" id="ehu-C4-7VQ"/>
+                            <constraint firstItem="aHl-jP-MdG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hRq-Q5-FNy"/>
+                            <constraint firstItem="jsC-Za-M72" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="kte-04-c1T"/>
+                            <constraint firstItem="Ujm-07-bye" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="tAb-yK-LN5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="piN-uc-ufu"/>
+                    <connections>
+                        <outlet property="createButton" destination="E67-89-wO8" id="KiY-2c-GBL"/>
+                        <outlet property="goButton" destination="jsC-Za-M72" id="jrY-kQ-f8M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.7251908396945" y="-27.464788732394368"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="vyi-OE-TZW">
+            <objects>
+                <viewController id="aEK-14-Lgc" customClass="SecondViewController" customModule="MovieDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hwx-X6-xga">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZM0-83-tHP">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="keC-1T-ab0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZM0-83-tHP" firstAttribute="top" secondItem="hwx-X6-xga" secondAttribute="top" id="5kT-Dx-e9T"/>
+                            <constraint firstItem="keC-1T-ab0" firstAttribute="bottom" secondItem="ZM0-83-tHP" secondAttribute="bottom" id="JhL-3u-dAt"/>
+                            <constraint firstItem="keC-1T-ab0" firstAttribute="trailing" secondItem="ZM0-83-tHP" secondAttribute="trailing" id="KWp-ic-jOT"/>
+                            <constraint firstItem="ZM0-83-tHP" firstAttribute="leading" secondItem="keC-1T-ab0" secondAttribute="leading" id="hpF-h9-EM6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cP8-W9-OLI"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZM0-83-tHP" id="bGo-s8-e2z"/>
+                        <segue destination="WpV-NP-j60" kind="show" identifier="toAddVC" id="bTb-Nf-tau"/>
+                        <segue destination="0a6-3O-zW4" kind="show" identifier="toThirdVC" id="XeR-xw-0NK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAW-sg-cdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1940" y="-35"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="LtU-ng-vdn">
+            <objects>
+                <viewController id="WpV-NP-j60" customClass="FourthViewController" customModule="MovieDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dIJ-jS-IUE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Image :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycC-AX-xR1">
+                                <rect key="frame" x="-11" y="216" width="142" height="27"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <color key="textColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Film :" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eV6-27-0Xf">
+                                <rect key="frame" x="26.000000000000007" y="282" width="103.66666666666669" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103.66666666666667" id="EDU-iC-waR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <color key="textColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Director :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQF-zC-TOW">
+                                <rect key="frame" x="-10" y="296" width="142" height="20"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <color key="textColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Year :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHE-g4-ZDg">
+                                <rect key="frame" x="-11" y="387" width="142" height="20"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <color key="textColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Country :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJ9-hR-pwt">
+                                <rect key="frame" x="-11" y="345" width="143" height="20"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <color key="textColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d34-g2-AJg">
+                                <rect key="frame" x="138" y="251" width="206" height="34"/>
+                                <color key="backgroundColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xaP-ec-5Q2">
+                                <rect key="frame" x="137" y="296" width="208" height="34"/>
+                                <color key="backgroundColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXc-h3-ot3">
+                                <rect key="frame" x="139" y="380" width="208" height="34"/>
+                                <color key="backgroundColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-4e-ViL">
+                                <rect key="frame" x="139" y="209" width="207" height="34"/>
+                                <color key="backgroundColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnl-lI-8Yl">
+                                <rect key="frame" x="138" y="338" width="208" height="34"/>
+                                <color key="backgroundColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Comment :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhd-vq-uWn">
+                                <rect key="frame" x="-11" y="426" width="143" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Wgg-gA-ZQH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <color key="textColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sX7-Ed-znS">
+                                <rect key="frame" x="137" y="426" width="209" height="271"/>
+                                <color key="backgroundColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n0o-gC-zAY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d34-g2-AJg" firstAttribute="centerX" secondItem="xaP-ec-5Q2" secondAttribute="centerX" id="0Nh-rO-t6N"/>
+                            <constraint firstItem="vJ9-hR-pwt" firstAttribute="leading" secondItem="EHE-g4-ZDg" secondAttribute="leading" id="11O-kg-A1j"/>
+                            <constraint firstItem="vJ9-hR-pwt" firstAttribute="top" secondItem="lQF-zC-TOW" secondAttribute="bottom" constant="29" id="2NZ-9U-3zO"/>
+                            <constraint firstItem="Hhd-vq-uWn" firstAttribute="top" secondItem="EHE-g4-ZDg" secondAttribute="bottom" constant="19" id="4UV-ij-fFq"/>
+                            <constraint firstItem="EHE-g4-ZDg" firstAttribute="centerY" secondItem="mXc-h3-ot3" secondAttribute="centerY" id="6f5-kP-frF"/>
+                            <constraint firstItem="eV6-27-0Xf" firstAttribute="top" secondItem="ycC-AX-xR1" secondAttribute="bottom" constant="15" id="7Fe-CA-NFt"/>
+                            <constraint firstItem="xaP-ec-5Q2" firstAttribute="top" secondItem="d34-g2-AJg" secondAttribute="bottom" constant="11" id="8Gt-RE-1QA"/>
+                            <constraint firstItem="eV6-27-0Xf" firstAttribute="leading" secondItem="n0o-gC-zAY" secondAttribute="leading" constant="26.000000000000007" id="8Qc-8h-ACh"/>
+                            <constraint firstItem="0Ux-4e-ViL" firstAttribute="centerX" secondItem="mXc-h3-ot3" secondAttribute="centerX" id="9XL-fm-KVM"/>
+                            <constraint firstItem="d34-g2-AJg" firstAttribute="leading" secondItem="nnl-lI-8Yl" secondAttribute="leading" id="Cp5-Mm-gbL"/>
+                            <constraint firstItem="EHE-g4-ZDg" firstAttribute="leading" secondItem="Hhd-vq-uWn" secondAttribute="leading" id="G3J-AE-Kww"/>
+                            <constraint firstItem="lQF-zC-TOW" firstAttribute="trailing" secondItem="vJ9-hR-pwt" secondAttribute="trailing" id="Gy1-R2-vvp"/>
+                            <constraint firstItem="ycC-AX-xR1" firstAttribute="top" secondItem="n0o-gC-zAY" secondAttribute="top" constant="113" id="Hhr-cz-LeF"/>
+                            <constraint firstItem="lQF-zC-TOW" firstAttribute="leading" secondItem="dIJ-jS-IUE" secondAttribute="leadingMargin" constant="-26" id="OKr-0r-asS"/>
+                            <constraint firstItem="mXc-h3-ot3" firstAttribute="top" secondItem="nnl-lI-8Yl" secondAttribute="bottom" constant="8" id="PPo-a4-mmK"/>
+                            <constraint firstItem="ycC-AX-xR1" firstAttribute="bottom" secondItem="0Ux-4e-ViL" secondAttribute="bottom" id="QVd-Ce-eBb"/>
+                            <constraint firstItem="lQF-zC-TOW" firstAttribute="top" secondItem="xaP-ec-5Q2" secondAttribute="top" id="TCV-TR-tlH"/>
+                            <constraint firstItem="xaP-ec-5Q2" firstAttribute="centerX" secondItem="sX7-Ed-znS" secondAttribute="centerX" id="TKf-Lb-YXw"/>
+                            <constraint firstItem="eV6-27-0Xf" firstAttribute="centerY" secondItem="d34-g2-AJg" secondAttribute="centerY" id="TkA-tk-A2y"/>
+                            <constraint firstItem="n0o-gC-zAY" firstAttribute="trailing" secondItem="mXc-h3-ot3" secondAttribute="trailing" constant="46" id="UHl-sL-7VL"/>
+                            <constraint firstItem="xaP-ec-5Q2" firstAttribute="leading" secondItem="lQF-zC-TOW" secondAttribute="trailing" constant="5" id="VgU-9k-C2L"/>
+                            <constraint firstItem="n0o-gC-zAY" firstAttribute="bottom" secondItem="sX7-Ed-znS" secondAttribute="bottom" constant="121" id="Y2W-Xm-VyQ"/>
+                            <constraint firstItem="d34-g2-AJg" firstAttribute="leading" secondItem="eV6-27-0Xf" secondAttribute="trailing" constant="8.3333333333333144" id="aNy-NX-rr2"/>
+                            <constraint firstItem="n0o-gC-zAY" firstAttribute="bottom" secondItem="Hhd-vq-uWn" secondAttribute="bottom" constant="372" id="f67-zj-Ams"/>
+                            <constraint firstItem="ycC-AX-xR1" firstAttribute="leading" secondItem="vJ9-hR-pwt" secondAttribute="leading" id="fMi-pg-fgX"/>
+                            <constraint firstItem="0Ux-4e-ViL" firstAttribute="trailing" secondItem="nnl-lI-8Yl" secondAttribute="trailing" id="fNb-zm-vAV"/>
+                            <constraint firstItem="xaP-ec-5Q2" firstAttribute="leading" secondItem="sX7-Ed-znS" secondAttribute="leading" id="g5t-3B-cHl"/>
+                            <constraint firstItem="EHE-g4-ZDg" firstAttribute="top" secondItem="vJ9-hR-pwt" secondAttribute="bottom" constant="22" id="iCg-YD-co3"/>
+                            <constraint firstItem="0Ux-4e-ViL" firstAttribute="centerX" secondItem="nnl-lI-8Yl" secondAttribute="centerX" id="j6e-dL-8YP"/>
+                            <constraint firstItem="nnl-lI-8Yl" firstAttribute="trailing" secondItem="sX7-Ed-znS" secondAttribute="trailing" id="l2z-9I-4AR"/>
+                            <constraint firstItem="nnl-lI-8Yl" firstAttribute="centerX" secondItem="sX7-Ed-znS" secondAttribute="centerX" id="laf-Bq-Rof"/>
+                            <constraint firstItem="Hhd-vq-uWn" firstAttribute="top" secondItem="sX7-Ed-znS" secondAttribute="top" id="nAJ-2x-euJ"/>
+                            <constraint firstItem="d34-g2-AJg" firstAttribute="top" secondItem="0Ux-4e-ViL" secondAttribute="bottom" constant="8" id="nHe-bZ-8hT"/>
+                            <constraint firstItem="nnl-lI-8Yl" firstAttribute="top" secondItem="xaP-ec-5Q2" secondAttribute="bottom" constant="8" id="nuf-2n-mbX"/>
+                            <constraint firstItem="0Ux-4e-ViL" firstAttribute="leading" secondItem="mXc-h3-ot3" secondAttribute="leading" id="osx-UN-W1z"/>
+                            <constraint firstItem="vJ9-hR-pwt" firstAttribute="trailing" secondItem="Hhd-vq-uWn" secondAttribute="trailing" id="p04-6o-cMR"/>
+                            <constraint firstItem="EHE-g4-ZDg" firstAttribute="centerX" secondItem="Hhd-vq-uWn" secondAttribute="centerX" id="rJQ-dA-vJZ"/>
+                            <constraint firstItem="0Ux-4e-ViL" firstAttribute="top" secondItem="n0o-gC-zAY" secondAttribute="top" constant="106" id="uR2-fn-CmB"/>
+                            <constraint firstItem="lQF-zC-TOW" firstAttribute="centerX" secondItem="vJ9-hR-pwt" secondAttribute="centerX" id="wOr-LW-VDO"/>
+                            <constraint firstItem="ycC-AX-xR1" firstAttribute="trailing" secondItem="EHE-g4-ZDg" secondAttribute="trailing" id="z5B-9L-wIl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Stp-Rb-tyW"/>
+                    <connections>
+                        <outlet property="comment" destination="sX7-Ed-znS" id="dFB-Wj-F7M"/>
+                        <outlet property="country" destination="nnl-lI-8Yl" id="qro-Dn-zIc"/>
+                        <outlet property="director" destination="xaP-ec-5Q2" id="ofZ-tz-RhA"/>
+                        <outlet property="filmName" destination="d34-g2-AJg" id="eoH-tg-wYU"/>
+                        <outlet property="image" destination="0Ux-4e-ViL" id="DJN-xp-Ov8"/>
+                        <outlet property="textView" destination="sX7-Ed-znS" id="btY-yd-WDZ"/>
+                        <outlet property="year" destination="mXc-h3-ot3" id="5gw-yT-vlP"/>
+                        <segue destination="aEK-14-Lgc" kind="show" identifier="toListVC" id="xhD-SF-9nE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIq-KH-VdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="706.33802816901414"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="f5u-c8-odw">
+            <objects>
+                <viewController id="0a6-3O-zW4" customClass="ThirdViewController" customModule="MovieDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V1A-0b-GYc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1540"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAc-3i-gl6">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="1540"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hgp-9A-1gP">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1550"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adsız tasarım-2" translatesAutoresizingMaskIntoConstraints="NO" id="GEf-6g-eWU">
+                                                <rect key="frame" x="37" y="104" width="319" height="337"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="337" id="CGU-M9-nw5"/>
+                                                    <constraint firstAttribute="width" constant="319" id="obD-dM-Hyo"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KAR KARDEŞLİĞİ " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T90-dG-79c">
+                                                <rect key="frame" x="37" y="34" width="319" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="uBW-Jj-isK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" systemColor="tertiaryLabelColor"/>
+                                                <size key="shadowOffset" width="3" height="2"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIRECTOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uh-Ox-gWj">
+                                                <rect key="frame" x="100" y="456" width="193" height="22"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" systemColor="tertiaryLabelColor"/>
+                                                <size key="shadowOffset" width="3" height="2"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOREM IPSUM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zk-V5-dNd">
+                                                <rect key="frame" x="37" y="485" width="319" height="18"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxb-OM-21g">
+                                                <rect key="frame" x="37" y="557" width="319" height="18"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COUNTRY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiw-vZ-lPT">
+                                                <rect key="frame" x="100" y="600" width="193" height="22"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" systemColor="tertiaryLabelColor"/>
+                                                <size key="shadowOffset" width="3" height="2"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvQ-Qu-eh4">
+                                                <rect key="frame" x="37" y="629" width="319" height="18"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY COMMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS5-DF-xuU">
+                                                <rect key="frame" x="37" y="672" width="319" height="22"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" systemColor="tertiaryLabelColor"/>
+                                                <size key="shadowOffset" width="3" height="2"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="36" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPy-ms-E27">
+                                                <rect key="frame" x="37" y="701" width="319" height="648"/>
+                                                <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. oftware like Aldus PageMaker including versions of Lorem Ipsum.</string>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YEAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itw-Kb-bxb">
+                                                <rect key="frame" x="100" y="528" width="193" height="22"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" systemColor="tertiaryLabelColor"/>
+                                                <size key="shadowOffset" width="3" height="2"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.32016205790000002" green="0.45407176020000001" blue="0.33164888619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Itw-Kb-bxb" firstAttribute="top" secondItem="2zk-V5-dNd" secondAttribute="bottom" constant="25" id="02O-XK-QoR"/>
+                                            <constraint firstItem="Gxb-OM-21g" firstAttribute="top" secondItem="Itw-Kb-bxb" secondAttribute="bottom" constant="7" id="0X1-PG-Kcb"/>
+                                            <constraint firstAttribute="trailing" secondItem="T90-dG-79c" secondAttribute="trailing" constant="37" id="0mM-ZM-REF"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gxb-OM-21g" secondAttribute="trailing" constant="37" id="8B7-Me-uvB"/>
+                                            <constraint firstItem="HS5-DF-xuU" firstAttribute="top" secondItem="NvQ-Qu-eh4" secondAttribute="bottom" constant="25" id="8lN-99-xCA"/>
+                                            <constraint firstItem="2zk-V5-dNd" firstAttribute="top" secondItem="5uh-Ox-gWj" secondAttribute="bottom" constant="7" id="8oJ-e7-Vvc"/>
+                                            <constraint firstItem="Gxb-OM-21g" firstAttribute="leading" secondItem="Hgp-9A-1gP" secondAttribute="leading" constant="37" id="BXm-fM-U1h"/>
+                                            <constraint firstItem="GEf-6g-eWU" firstAttribute="top" secondItem="T90-dG-79c" secondAttribute="bottom" constant="5" id="BZj-No-1BA"/>
+                                            <constraint firstAttribute="trailing" secondItem="GEf-6g-eWU" secondAttribute="trailing" constant="37" id="DGu-pr-CjZ"/>
+                                            <constraint firstItem="GEf-6g-eWU" firstAttribute="leading" secondItem="Hgp-9A-1gP" secondAttribute="leading" constant="37" id="HjE-J9-qec"/>
+                                            <constraint firstAttribute="trailing" secondItem="2zk-V5-dNd" secondAttribute="trailing" constant="37" id="Imh-11-cHx"/>
+                                            <constraint firstItem="cPy-ms-E27" firstAttribute="top" secondItem="HS5-DF-xuU" secondAttribute="bottom" constant="7" id="KAp-bK-0Sb"/>
+                                            <constraint firstItem="T90-dG-79c" firstAttribute="top" secondItem="Hgp-9A-1gP" secondAttribute="top" constant="34" id="Kbt-BQ-bOC"/>
+                                            <constraint firstAttribute="trailing" secondItem="Itw-Kb-bxb" secondAttribute="trailing" constant="100" id="Qar-yO-sFI"/>
+                                            <constraint firstAttribute="height" constant="1550" id="Rop-4j-YBp"/>
+                                            <constraint firstAttribute="trailing" secondItem="5uh-Ox-gWj" secondAttribute="trailing" constant="100" id="VcF-ZR-a45"/>
+                                            <constraint firstItem="cPy-ms-E27" firstAttribute="leading" secondItem="Hgp-9A-1gP" secondAttribute="leading" constant="37" id="WZR-1r-jDi"/>
+                                            <constraint firstItem="T90-dG-79c" firstAttribute="leading" secondItem="Hgp-9A-1gP" secondAttribute="leading" constant="37" id="ZP2-M3-PaN"/>
+                                            <constraint firstItem="5uh-Ox-gWj" firstAttribute="leading" secondItem="Hgp-9A-1gP" secondAttribute="leading" constant="100" id="a2n-tt-pqD"/>
+                                            <constraint firstItem="wiw-vZ-lPT" firstAttribute="top" secondItem="Gxb-OM-21g" secondAttribute="bottom" constant="25" id="ark-uf-MNu"/>
+                                            <constraint firstItem="NvQ-Qu-eh4" firstAttribute="top" secondItem="wiw-vZ-lPT" secondAttribute="bottom" constant="7" id="b6v-Du-UJk"/>
+                                            <constraint firstAttribute="trailing" secondItem="cPy-ms-E27" secondAttribute="trailing" constant="37" id="g3u-k5-zaT"/>
+                                            <constraint firstItem="NvQ-Qu-eh4" firstAttribute="leading" secondItem="Hgp-9A-1gP" secondAttribute="leading" constant="37" id="gWo-p1-tdz"/>
+                                            <constraint firstAttribute="trailing" secondItem="HS5-DF-xuU" secondAttribute="trailing" constant="37" id="iCA-L2-IoN"/>
+                                            <constraint firstItem="2zk-V5-dNd" firstAttribute="leading" secondItem="Hgp-9A-1gP" secondAttribute="leading" constant="37" id="ign-sz-k6e"/>
+                                            <constraint firstItem="Itw-Kb-bxb" firstAttribute="leading" secondItem="Hgp-9A-1gP" secondAttribute="leading" constant="100" id="jyl-e4-2fP"/>
+                                            <constraint firstAttribute="trailing" secondItem="NvQ-Qu-eh4" secondAttribute="trailing" constant="37" id="kTd-cO-pcH"/>
+                                            <constraint firstItem="5uh-Ox-gWj" firstAttribute="top" secondItem="GEf-6g-eWU" secondAttribute="bottom" constant="15" id="mN2-ge-k8r"/>
+                                            <constraint firstItem="HS5-DF-xuU" firstAttribute="leading" secondItem="Hgp-9A-1gP" secondAttribute="leading" constant="37" id="mRt-Ok-zNU"/>
+                                            <constraint firstItem="wiw-vZ-lPT" firstAttribute="leading" secondItem="Hgp-9A-1gP" secondAttribute="leading" constant="100" id="qQG-ev-4ir"/>
+                                            <constraint firstAttribute="trailing" secondItem="wiw-vZ-lPT" secondAttribute="trailing" constant="100" id="xky-sW-MMw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Hgp-9A-1gP" secondAttribute="bottom" id="7jS-pB-N0K"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hgp-9A-1gP" secondAttribute="trailing" id="HiG-V0-k2B"/>
+                                    <constraint firstItem="Hgp-9A-1gP" firstAttribute="leading" secondItem="lAc-3i-gl6" secondAttribute="leading" id="Rhz-Uq-h7e"/>
+                                    <constraint firstItem="Hgp-9A-1gP" firstAttribute="top" secondItem="lAc-3i-gl6" secondAttribute="top" id="wFh-rD-nkM"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gOA-wV-dMJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lAc-3i-gl6" firstAttribute="leading" secondItem="gOA-wV-dMJ" secondAttribute="leading" id="8LY-lC-C0s"/>
+                            <constraint firstItem="lAc-3i-gl6" firstAttribute="trailing" secondItem="gOA-wV-dMJ" secondAttribute="trailing" id="DFo-Ky-cYh"/>
+                            <constraint firstItem="Hgp-9A-1gP" firstAttribute="width" secondItem="V1A-0b-GYc" secondAttribute="width" id="GON-bT-UOI"/>
+                            <constraint firstItem="lAc-3i-gl6" firstAttribute="top" secondItem="gOA-wV-dMJ" secondAttribute="top" id="dE0-KT-t6t"/>
+                            <constraint firstAttribute="bottom" secondItem="lAc-3i-gl6" secondAttribute="bottom" id="dNP-CY-Kgg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wf6-bp-005"/>
+                    <size key="freeformSize" width="393" height="1550"/>
+                    <connections>
+                        <outlet property="comment" destination="cPy-ms-E27" id="aoP-aC-HPA"/>
+                        <outlet property="country" destination="NvQ-Qu-eh4" id="z9n-99-cb9"/>
+                        <outlet property="director" destination="2zk-V5-dNd" id="xbS-mu-AGX"/>
+                        <outlet property="filmName" destination="T90-dG-79c" id="EqM-cA-SeA"/>
+                        <outlet property="image" destination="GEf-6g-eWU" id="USe-r2-Ok5"/>
+                        <outlet property="year" destination="Gxb-OM-21g" id="Q5O-8a-hcd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ao6-nS-7Yv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2864.8854961832062" y="-35.211267605633807"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Qh-W6-otA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qFs-4Q-HV7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="85f-uv-stJ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.32016205790000002" green="0.45407176020000001" blue="0.33164888619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5bK-8W-35c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLG-xQ-VMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bTb-Nf-tau"/>
+        <segue reference="xhD-SF-9nE"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Adsız tasarım-2" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
