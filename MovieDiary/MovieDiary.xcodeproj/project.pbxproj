@@ -19,6 +19,10 @@
 		65AF80842C5BC73800B477D2 /* AlertLib in Frameworks */ = {isa = PBXBuildFile; productRef = 65AF80832C5BC73800B477D2 /* AlertLib */; };
 		65AF80862C5BC74600B477D2 /* AlertLib in Frameworks */ = {isa = PBXBuildFile; productRef = 65AF80852C5BC74600B477D2 /* AlertLib */; };
 		65AF80882C5BC76C00B477D2 /* AlertLib in Frameworks */ = {isa = PBXBuildFile; productRef = 65AF80872C5BC76C00B477D2 /* AlertLib */; };
+		65AF808A2C5BD21900B477D2 /* AlertLib in Frameworks */ = {isa = PBXBuildFile; productRef = 65AF80892C5BD21900B477D2 /* AlertLib */; };
+		65AF808C2C5BD23D00B477D2 /* AlertLib in Sources */ = {isa = PBXBuildFile; fileRef = 65AF808B2C5BD23D00B477D2 /* AlertLib */; };
+		65AF808E2C5BD26E00B477D2 /* AlertLib in Frameworks */ = {isa = PBXBuildFile; productRef = 65AF808D2C5BD26E00B477D2 /* AlertLib */; };
+		65AF80902C5BD28200B477D2 /* AlertLib in Frameworks */ = {isa = PBXBuildFile; productRef = 65AF808F2C5BD28200B477D2 /* AlertLib */; };
 		65E9F8E52C5AD091005727AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9F8E42C5AD091005727AD /* ViewController.swift */; };
 		65E9F8E82C5AD0E8005727AD /* AlertLib in Frameworks */ = {isa = PBXBuildFile; productRef = 65E9F8E72C5AD0E8005727AD /* AlertLib */; };
 /* End PBXBuildFile section */
@@ -35,6 +39,7 @@
 		650F56812C53CDF10099E0E8 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		650F56832C53CDF90099E0E8 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		650F56872C53CE0D0099E0E8 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		65AF808B2C5BD23D00B477D2 /* AlertLib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AlertLib; path = ../../Libraries/AlertLib; sourceTree = "<group>"; };
 		65E9F8E42C5AD091005727AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,9 +49,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E9F8E82C5AD0E8005727AD /* AlertLib in Frameworks */,
+				65AF808E2C5BD26E00B477D2 /* AlertLib in Frameworks */,
+				65AF80902C5BD28200B477D2 /* AlertLib in Frameworks */,
 				65AF80862C5BC74600B477D2 /* AlertLib in Frameworks */,
 				65AF80842C5BC73800B477D2 /* AlertLib in Frameworks */,
 				65AF80882C5BC76C00B477D2 /* AlertLib in Frameworks */,
+				65AF808A2C5BD21900B477D2 /* AlertLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,7 @@
 		650F565C2C53CDC30099E0E8 = {
 			isa = PBXGroup;
 			children = (
+				65AF808B2C5BD23D00B477D2 /* AlertLib */,
 				650F56672C53CDC30099E0E8 /* MovieDiary */,
 				650F56662C53CDC30099E0E8 /* Products */,
 			);
@@ -108,6 +117,9 @@
 				65AF80832C5BC73800B477D2 /* AlertLib */,
 				65AF80852C5BC74600B477D2 /* AlertLib */,
 				65AF80872C5BC76C00B477D2 /* AlertLib */,
+				65AF80892C5BD21900B477D2 /* AlertLib */,
+				65AF808D2C5BD26E00B477D2 /* AlertLib */,
+				65AF808F2C5BD28200B477D2 /* AlertLib */,
 			);
 			productName = MovieDiary;
 			productReference = 650F56652C53CDC30099E0E8 /* MovieDiary.app */;
@@ -167,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65AF808C2C5BD23D00B477D2 /* AlertLib in Sources */,
 				650F56732C53CDC30099E0E8 /* MovieDiary.xcdatamodeld in Sources */,
 				650F56692C53CDC30099E0E8 /* AppDelegate.swift in Sources */,
 				650F56822C53CDF10099E0E8 /* SecondViewController.swift in Sources */,
@@ -406,6 +419,18 @@
 			productName = AlertLib;
 		};
 		65AF80872C5BC76C00B477D2 /* AlertLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AlertLib;
+		};
+		65AF80892C5BD21900B477D2 /* AlertLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AlertLib;
+		};
+		65AF808D2C5BD26E00B477D2 /* AlertLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AlertLib;
+		};
+		65AF808F2C5BD28200B477D2 /* AlertLib */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AlertLib;
 		};
