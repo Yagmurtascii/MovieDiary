@@ -1,38 +1,56 @@
 import UIKit
 import CoreData
 
-class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate {
     
     var filmName = [String]()
     var id = [String]()
     var choosenId: String?
     var choosenFilmName = ""
-    
+    var filteredData: [String]!
+    var isSearching = false
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        searchBar.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         getData()
-    
+        filteredData = filmName
+        searchBar.searchTextField.textColor = UIColor.darkGray
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButton))
     }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            isSearching = false
+            filteredData = filmName
+        } else {
+            isSearching = true
+            filteredData = filmName.filter { $0.lowercased().contains(searchText.lowercased()) }
+        }
+        tableView.reloadData()
+    }
+
     
     override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(getData), name: NSNotification.Name(rawValue: "newFilm"), object: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filmName.count
+        return isSearching ? filteredData.count : filmName.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 //   let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         var content = cell.defaultContentConfiguration()
-        content.text = filmName[indexPath.row]
+        content.text = isSearching ? filteredData[indexPath.row] : filmName[indexPath.row]
         cell.contentConfiguration = content
         return cell
     }
@@ -72,10 +90,10 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
                  
                     }
                 }
-             
+          
                 print("filmName: \(filmName)")
                 print("id: \(id)")
-                self.tableView.reloadData()
+               
             }
         } catch {
           

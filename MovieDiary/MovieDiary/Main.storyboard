@@ -77,8 +77,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="piN-uc-ufu"/>
                     <connections>
-                        <outlet property="createButton" destination="E67-89-wO8" id="KiY-2c-GBL"/>
-                        <outlet property="goButton" destination="jsC-Za-M72" id="jrY-kQ-f8M"/>
+                        <outlet property="create" destination="E67-89-wO8" id="2Z9-07-ftB"/>
+                        <outlet property="show" destination="jsC-Za-M72" id="O8A-cU-SFA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,22 +93,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="center" placeholder="Search movie" translucent="NO" id="UG4-wa-DzK">
+                                <rect key="frame" x="0.0" y="103" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.34901961679999999" green="0.45098042490000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="aEK-14-Lgc" id="pcT-F7-rhF"/>
+                                </connections>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZM0-83-tHP">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <rect key="frame" x="0.0" y="147" width="393" height="681"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="keC-1T-ab0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZM0-83-tHP" firstAttribute="top" secondItem="hwx-X6-xga" secondAttribute="top" id="5kT-Dx-e9T"/>
-                            <constraint firstItem="keC-1T-ab0" firstAttribute="bottom" secondItem="ZM0-83-tHP" secondAttribute="bottom" id="JhL-3u-dAt"/>
-                            <constraint firstItem="keC-1T-ab0" firstAttribute="trailing" secondItem="ZM0-83-tHP" secondAttribute="trailing" id="KWp-ic-jOT"/>
-                            <constraint firstItem="ZM0-83-tHP" firstAttribute="leading" secondItem="keC-1T-ab0" secondAttribute="leading" id="hpF-h9-EM6"/>
+                            <constraint firstItem="ZM0-83-tHP" firstAttribute="trailing" secondItem="UG4-wa-DzK" secondAttribute="trailing" id="6II-dy-4f8"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ZM0-83-tHP" secondAttribute="bottom" constant="-10" id="Fmn-g3-Rmm"/>
+                            <constraint firstItem="ZM0-83-tHP" firstAttribute="leading" secondItem="UG4-wa-DzK" secondAttribute="leading" id="srk-W0-EXr"/>
+                            <constraint firstItem="ZM0-83-tHP" firstAttribute="top" secondItem="UG4-wa-DzK" secondAttribute="bottom" id="tu0-GS-qPp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cP8-W9-OLI"/>
                     <connections>
+                        <outlet property="searchBar" destination="UG4-wa-DzK" id="9lI-gO-FAd"/>
                         <outlet property="tableView" destination="ZM0-83-tHP" id="bGo-s8-e2z"/>
                         <segue destination="WpV-NP-j60" kind="show" identifier="toAddVC" id="bTb-Nf-tau"/>
                         <segue destination="0a6-3O-zW4" kind="show" identifier="toThirdVC" id="XeR-xw-0NK"/>
@@ -116,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAW-sg-cdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="-35"/>
+            <point key="canvasLocation" x="1939.6946564885495" y="-35.211267605633807"/>
         </scene>
         <!--Fourth View Controller-->
         <scene sceneID="LtU-ng-vdn">
@@ -296,7 +307,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAc-3i-gl6">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="1540"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="1447"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hgp-9A-1gP">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1550"/>
@@ -467,8 +478,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dYE-mP-IhP"/>
-        <segue reference="xhD-SF-9nE"/>
+        <segue reference="bTb-Nf-tau"/>
+        <segue reference="G1X-Ip-LNq"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Adsız tasarım-2" width="500" height="500"/>

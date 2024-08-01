@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import AlertLib
 class ThirdViewController: UIViewController {
 
     
@@ -78,6 +79,10 @@ class ThirdViewController: UIViewController {
                         image.image = imageView
                     }
                 }
+            }
+            else
+            {
+                AlertLib.showSingleButtonAlert(on: self, alertTitle: "Warning", buttonTitle: "Ok", message: "No data available", actionAlertType: ActionAlertType.defaultType, controllerAlertType: ControllerAlertType.alert)
             }
         }
         catch

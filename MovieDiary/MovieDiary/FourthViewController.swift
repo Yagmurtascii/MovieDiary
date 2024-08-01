@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import AlertLib
 class FourthViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
  
@@ -16,17 +17,12 @@ class FourthViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var director: UITextField!
     @IBOutlet weak var country: UITextField!
     @IBOutlet weak var year: UITextField!
-    
     @IBOutlet weak var comment: UITextView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.layer.cornerRadius = 5
-        textView.layer.masksToBounds = true
-        
         image.layer.cornerRadius = 5
-        image.layer.masksToBounds = true
         
         let imageTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(pickImage))
         image.addGestureRecognizer(imageTapRecognizer)
@@ -80,11 +76,7 @@ class FourthViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         else
         {
-            let alert = UIAlertController(title: "Warning", message: "This fields not empty", preferredStyle: UIAlertController.Style.alert)
-            let button = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default)
-            alert.addAction(button)
-            self.present(alert, animated: true)
+            AlertLib.showSingleButtonAlert(on: self, alertTitle: "Warning", buttonTitle: "Ok", message: "This fields not empty", actionAlertType: ActionAlertType.defaultType , controllerAlertType: ControllerAlertType.alert)
         }
-        
     }
 }
