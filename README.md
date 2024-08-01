@@ -7,6 +7,7 @@ This application is a movie diary application. You can add what watch films and 
     - Core Data used.
     - Data migration between segues.
     - TableView used for list.
+    - SearchBar added.
     - Worked with structure
     - Delete process added.
     - Add process added.
@@ -15,7 +16,7 @@ This application is a movie diary application. You can add what watch films and 
 
 ![Screenshot_2024-07-26_at_15 36 39-removebg-preview](https://github.com/user-attachments/assets/dd208500-2a45-4354-8c68-940c8f49fbaa)
 
-![Screenshot_2024-07-26_at_15 48 25-removebg-preview](https://github.com/user-attachments/assets/4290a6a6-7d57-45b2-bde1-8f35224070d0)
+![Screenshot_2024-08-01_at_17 28 18-removebg-preview](https://github.com/user-attachments/assets/8f170e91-d857-4c4d-b03e-988875fc746d)
 
 ![Screenshot_2024-07-26_at_15 44 16-removebg-preview](https://github.com/user-attachments/assets/032b8b69-125e-44da-b5c1-9532e73cfc4b)
 
